@@ -1,0 +1,32 @@
+<div class="filter-container">
+   <div class="filter-section">
+       <div class="filter-heading d-flex justify-content-between align-items-center">
+         <h2>Price</h2>
+         <span (click)="toggleProducttype()"> <i *ngIf="!showProductType" class="fa-solid fa-plus"></i> <i *ngIf="showProductType" class="fa-solid fa-minus"></i> </span>
+       </div>
+     
+   </div>
+ <div class="section" *ngIf="showProductType">
+   <div class="price-filter">
+      <div>
+         <label for="lprice">$</label>
+         <input type="text" id="lprice">
+        </div>
+        <span>to</span>
+
+        <div>
+         <label for="hprice">$</label>
+         <input type="text" id="hprice">
+        </div>
+         
+    </div>
+    <button class="filter-button">Filter</button>
+   <div class="filter-section">
+       <div class="filter-item">Product type <span class="plus">+</span></div>
+       <div class="filter-item">Availability <span class="plus">+</span></div>
+       <div class="filter-item">Brand <span class="plus">+</span></div>
+       <div class="filter-item">Color <span class="plus">+</span></div>
+       <div class="filter-item">Material <span class="plus">+</span></div>
+   </div>
+ </div>
+</div>

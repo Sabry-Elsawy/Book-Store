@@ -1,0 +1,15 @@
+import { HttpClient } from '@angular/common/http';
+import { Injectable } from '@angular/core';
+import { Observable } from 'rxjs';
+
+@Injectable({
+  providedIn: 'root'
+})
+export class CategoriesService {
+
+  constructor(private _HttpClient:HttpClient) { }
+
+  GetAllCatgory():Observable<any>{
+    return this._HttpClient.get('https://upskilling-egypt.com:3007/api/category');
+  }
+}

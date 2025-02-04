@@ -1,0 +1,557 @@
+.Home-Slider{
+  
+    background: linear-gradient(78.83deg, #FFE6E6 8.52%, #F5FFFE 68.88%, #FFFFFF 101.74%);
+
+}
+
+.owl-carousel .owl-item {
+    height: auto;
+  }
+  .owl-carousel img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;  
+  }
+  
+ 
+:host ::ng-deep .owl-theme .owl-nav [class*=owl-] {
+    color: #FFF;
+    font-size: 14px;
+    margin: 5px;
+    padding: 7px 7px;
+    background: #ED553B;
+    display: inline-block;
+    cursor: pointer;
+    border-radius: 50%;
+}
+.caption-slider h3{
+    font-family: Inter;
+    font-size: 60px;
+    font-weight: 600;
+    line-height: 87px;
+    letter-spacing: -0.02em;
+    text-align: left;
+    color: #393280;
+
+}
+.caption-slider p{
+    font-family: Inter;
+    font-size: 22px;
+    font-weight: 500;
+    line-height: 39.6px;
+    letter-spacing: 0.04em;
+    text-align: left;
+    color: #393280CC;
+    padding: 15px 0;
+}
+.caption-slider button{
+    font-family: Inter;
+font-size: 16px;
+font-weight: 400;
+line-height: 35.2px;
+letter-spacing: 0.1em;
+ 
+color: #393280;
+border-radius: 7px;
+border-width: 1px;
+border-color: #393280;
+background-color: transparent;
+padding: 10px 30px;
+transition: all 300ms;
+}
+.caption-slider button:hover{
+    background-color: #393280;
+    color: #fff;
+}
+
+.category{
+    padding: 60px 0;
+}
+.category h6{
+    font-family: Inter;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 16.94px;
+    letter-spacing: 0.1em;
+    text-align: left;
+    color: #ED553B;
+    position: relative;
+    margin-left: 38px;
+}
+.category h6::before{
+    content: '';
+    position: absolute;
+    width: 32px;
+    height: 2px;
+    background-color: #ED553B;
+    left: -38px;
+    top: 8.77px;
+}
+.category h2{
+    font-family: Inter;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 44px;
+    text-align: left;
+    color: #393280;
+
+}
+.category .card {
+    border: none;
+
+}
+.category .card h5{
+    font-family: Inter;
+font-size: 24px;
+font-weight: 600;
+line-height: 32px;
+text-align: center;
+color: #393280;
+padding-top: 25px;
+}
+
+.category button{
+    border-radius: 7px;
+    border-width: 1px ;
+    border-color: #393280;
+    font-family: Inter;
+font-size: 16px;
+font-weight: 400;
+line-height: 35.2px;
+letter-spacing: 0.1em;
+ color: #393280;
+ background-color: transparent;
+ padding: 10px 30px;
+ transition: all 300ms;
+}
+.category button:hover{
+    background-color: #393280;
+    color: #FFF;
+}
+
+.books{
+    background-color: #FCECEC;
+    padding: 70px 30px;
+}
+
+.books-heading p{
+    font-family: Inter;
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 15.73px;
+    letter-spacing: 0.12em;
+    
+    color: #7A7A7A;
+
+}
+.books-heading h1{
+    font-family: Inter;
+    font-size: 48px;
+    font-weight: 600;
+    line-height: 58.09px;
+    text-align: center;
+    color: #393280;
+    position: relative;
+    padding-bottom: 30px;
+}
+.books-heading h1::before{
+    position: absolute;
+    content: '';
+    width: 35%;
+    background-color:  #E0E0E0;
+    left: -12px;
+    top: 50%;
+    transform: translateY(-50%);
+    height: 1px;
+}
+.books-heading h1::after{
+    position: absolute;
+    content: '';
+    width: 35%;
+    background-color:  #E0E0E0;
+    right: -12px;
+    top: 50%;
+    transform: translateY(-50%);
+    height: 1px;
+}
+.books .card{
+    text-align: center;
+    background-color: transparent;
+    border: none;
+}
+.books .card .image{
+    padding: 12px;
+    background-color: #FFF;
+    box-shadow: 0px 4px 10px 0px #00000026;
+    border: 1px solid #EAE8DF;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+.books .card .image:hover  button{
+    bottom: 130px;
+}
+.books .card .image button{
+position: absolute;
+bottom: -130px;
+left: 50%;
+transform: translateX(-50% );
+transition: bottom 0.6s ease;
+
+
+font-family: Inter;
+font-size: 16px;
+font-weight: 500;
+line-height: 19.36px;
+letter-spacing: 0.14em;
+text-align: center;
+color: #FFFFFF;
+background-color: #ED553B;
+border: none;
+padding: 15px ;
+width: 85%;
+}
+.books .card h6{
+    font-family: Inter;
+font-size: 22px;
+font-weight: 600;
+line-height: 26.63px;
+color: #393280;
+padding-top: 20px;
+
+}
+.books .card span{
+    font-family: Inter;
+font-size: 14px;
+font-weight: 400;
+line-height: 16.94px;
+letter-spacing: 0.02em;
+color: #888888;
+}
+.books .card p{
+    font-family: Inter;
+font-size: 18px;
+font-weight: 700;
+line-height: 21.78px;
+letter-spacing: 0.02em;
+color: #ED553B;
+padding-top: 15px;
+
+}
+.books .space{
+    width: 100%;
+    height: 1px;
+    background-color: #E0E0E0;
+    margin: 20px 0;
+}
+.books .btn1{
+    text-align: right;
+    display: block;
+}
+.books .btn1 button{
+    font-family: Inter;
+font-size: 16px;
+font-weight: 700;
+line-height: 19.36px;
+letter-spacing: 0.02em;
+color: #ED553B;
+border: none;
+background-color: transparent;
+}
+
+
+.offer{
+    margin: 50px 0;
+    padding: 60px ;
+    background-color: #FCEBEA;
+    border-radius: 20px;
+}
+.offer h2{
+    font-family: Inter;
+    font-size: 45px;
+    font-weight: 700;
+    line-height: 66px;
+    text-align: left;
+    color: #463C74;
+
+}
+.offer .lorem{
+    font-family: Inter;
+font-size: 18px;
+font-weight: 400;
+line-height: 32px;
+letter-spacing: 0.05em;
+text-align: left;
+color: #393280;
+padding: 20px 0;
+}
+.offer .time{
+    display: flex;
+    align-items: center;
+}
+.offer .time p{
+    padding-right: 40px;
+    font-family: Inter;
+font-size: 23px;
+font-weight: 700;
+line-height: 46.8px;
+letter-spacing: 0.1em;
+text-align: center;
+color: #000000;
+}
+.offer .time p span{
+    display: block;
+    font-family: Inter;
+font-size: 22px;
+font-weight: 500;
+line-height: 28.8px;
+letter-spacing: 0.1em;
+text-align: center;
+color: #ED553B;
+}
+
+.subscribe{
+    background-color: #FCEBEA;
+    padding:  0 0 166px 0;
+    margin: 40px 0;
+}
+.subscribe .heading{
+    background-color: #ED553B;
+    padding: 70px 30px;
+}
+.subscribe .heading h1{
+    font-family: Inter;
+font-size: 56px;
+font-weight: 700;
+line-height: 67.2px;
+letter-spacing: 0.01em;
+color: #fff;
+}
+.subscribe .heading p{
+    font-family: Inter;
+font-size: 20px;
+font-weight: 500;
+line-height: 41.6px;
+letter-spacing: 0.02em;
+text-align: center;
+color: #fff;
+}
+.subscribe .contact{
+    width: 40%;
+    
+}
+.subscribe .contact input{
+    border: 1px solid #DFDFDF;
+    padding: 25px 0px 25px 55px;
+    margin-top: -60px;
+    width: 100%;
+}
+.subscribe .contact i{
+    //font-family: Nunito Sans;
+    font-size: 26px;
+    font-weight: 600;
+    line-height: 35.46px;
+    color: #6C777C;
+    position: absolute;
+    left: 13px;
+    top: -5px;
+    border: 1px solid #DFDFDF;
+    padding: 0px 5px;
+    box-shadow: 0px 4px 35px 0px #A9A9A933;
+
+}
+.subscribe .contact button{
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 19.36px;
+    letter-spacing: 0.16em;
+    text-align: left;
+    color: #fff;
+    padding: 15px 25px;
+    background-color: #ED553B;
+    border: none;
+    position: absolute;
+    right: 13px;
+    bottom: 13px;
+}
+.subscribe .contact input:focus{
+    outline: none;
+    border: none;
+}
+.subscribe{
+    background-image:url(../../../assets/images/bg1.png), url(../../../assets/images/bg2.png), url(../../../assets/images/ornament.png);
+    background-repeat: no-repeat;
+    background-position: left bottom , left top , right bottom;
+}
+@media (max-width:1000px)  {
+    .subscribe .contact{
+        width: 100%;
+    }
+}
+
+
+.articles{
+    padding: 70px 30px;
+    background-color: #F7FCFC;
+    margin-bottom: 40px;
+}
+.articles .card{
+    border: none;
+    background-color: transparent;
+    padding: 0 20px;
+}
+.articles .card p{
+    font-family: Inter;
+font-size: 15px;
+font-weight: 400;
+line-height: 18.15px;
+letter-spacing: 0.06em;
+text-align: left;
+color: #74642F;
+margin: 15px 0 10px 0;
+}
+.articles .card h6{
+    font-family: Inter;
+    font-size: 26px;
+    font-weight: 400;
+    line-height: 43.16px;
+    text-align: left;
+    color: #173F5F;
+
+}
+.articles .card .space{
+    background-color: #C8C8C8;
+    height: 1px;
+    width: 100%;
+}
+.articles .card .icon{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 15px 0;
+}
+.articles .card .icon i{
+    color: #173F5F;
+    padding-left: 15px;
+}
+.articles button{
+    font-family: Inter;
+font-size: 16px;
+font-weight: 400;
+line-height: 35.2px;
+letter-spacing: 0.1em;
+color: #173F5F;
+border: 1px solid #C0C0C0;
+background-color: transparent;
+padding: 10px 25px;
+transition: all 300ms;
+}
+.articles button i{
+    color: #000000;
+    font-size: 12px;
+}
+.articles button:hover{
+    background-color: #173F5F;
+    color: #fff;
+}
+
+
+.details-books{
+    background: linear-gradient(78.43deg, #FBEEEE -27.34%, #F7FFFE 89.92%);
+    margin-top: 50px;
+    padding: 30px 0;
+}
+.details-books img{
+    width: 90%;
+   // height: 602px;
+   // border: 15px solid #FFFFFF;
+    //box-shadow: 2px 6px 34px 4px #3F3F3F14;
+    
+}
+.details-books .content h1{
+    font-family: Inter;
+    font-size: 48px;
+    font-weight: 600;
+    line-height: 58.09px;
+    color: #393280;
+    
+}
+.details-books .content .head{
+    font-family: Inter;
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 15.73px;
+    letter-spacing: 0.16em;
+    color: #888888;
+    padding: 20px 0 15px 0;
+    margin: 0;
+}
+.details-books .content h6{
+    font-family: Inter;
+    font-size: 28px;
+    font-weight: 600;
+    line-height: 33.89px;
+    color: #393280;
+    
+}
+.details-books .content p{
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 33.28px;
+    letter-spacing: 0.02em;
+    color: #7A7A7A;
+    
+}
+.details-books .content span{
+    font-family: Inter;
+    font-size: 23px;
+    font-weight: 700;
+    line-height: 27.84px;
+    letter-spacing: 0.02em;
+    color: #ED553B;
+    margin-top: 20px;
+}
+.details-books .content button{
+    border: 1px solid #393280;
+    color: #393280;
+    font-family: Inter;
+font-size: 16px;
+font-weight: 500;
+line-height: 35.2px;
+letter-spacing: 0.1em;
+ background-color: transparent;
+ padding: 10px 35px;
+margin-top: 90px;
+margin-bottom: 50px;
+transition: all 300ms;
+}
+.details-books .content button:hover{
+    background-color: #393280;
+    color: #fff;
+}
+
+.carousel-indicators [data-bs-target] {
+    width: 10px;
+    height: 10px;
+    cursor: pointer;
+    background-color: #ED553B;
+    border-radius: 50%;
+   
+    
+
+}
+
+.carousel-control-next-icon , .carousel-control-prev-icon{
+    background-image: none;
+    border-radius: 50%;
+    width: 48.71px;
+    height: 48.71px;
+    border: 1px solid #ED553B;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ED553B;
+    font-size: 18px;
+}

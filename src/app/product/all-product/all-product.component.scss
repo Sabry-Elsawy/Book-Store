@@ -1,0 +1,97 @@
+.books .card{
+    text-align: center;
+    background-color: transparent;
+    border: none;
+}
+.books .card .image{
+    padding: 15px;
+    background-color: #FFF;
+    box-shadow: 0px 4px 10px 0px #00000026;
+    border: 1px solid #EAE8DF;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    height: 410px;
+    width: 100%;
+}
+.books .card .image:hover  button{
+    bottom: 130px;
+}
+.books .card .image button{
+position: absolute;
+bottom: -130px;
+left: 50%;
+transform: translateX(-50% );
+transition: bottom 0.6s ease;
+
+
+font-family: Inter;
+font-size: 16px;
+font-weight: 500;
+line-height: 19.36px;
+letter-spacing: 0.14em;
+text-align: center;
+color: #FFFFFF;
+background-color: #ED553B;
+border: none;
+padding: 15px ;
+width: 85%;
+}
+.books .card h6{
+    font-family: Inter;
+font-size: 22px;
+font-weight: 600;
+line-height: 26.63px;
+color: #393280;
+padding-top: 20px;
+
+}
+.books .card span{
+    font-family: Inter;
+font-size: 14px;
+font-weight: 400;
+line-height: 16.94px;
+letter-spacing: 0.02em;
+color: #888888;
+}
+.books .card p{
+    font-family: Inter;
+font-size: 18px;
+font-weight: 700;
+line-height: 21.78px;
+letter-spacing: 0.02em;
+color: #ED553B;
+padding-top: 15px;
+
+}
+
+
+nav li{
+    margin: 0 5px;
+   
+}
+nav li a{
+   
+    border-radius: 50%;
+    font-family: Inter;
+font-size: 22px;
+font-weight: 400;
+line-height: 26.63px;
+letter-spacing: 0.02em;
+text-align: center;
+color: #888888;
+border: 1px solid #E5E3DA;
+
+}
+.active>.page-link, .page-link.active {
+    z-index: 3;
+    color:  #fff;
+    background-color:  #ED553B;
+    border: none;
+}
+nav li .arrow{
+    border: 1px solid #ED553B;
+    color: #ED553B;
+    font-size: 22px;
+}
+ 

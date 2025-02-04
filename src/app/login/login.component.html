@@ -1,0 +1,79 @@
+<section>
+    <div class="container">
+        <div class="row  ">
+            <div class="col-lg-6 g-0 col1" >
+                <div class="image-section ">
+                    <img src="../../assets/images/Picture.png" alt="Background Image">
+                </div>
+            </div>
+    
+    
+            <div class="col-lg-6 g-0">
+              <div class="form-section">
+                <div class="form-section-heading">
+                     <div class="logo">
+                        <img src="../../assets/images/Logo.png" alt="logo">
+                     </div>
+                    <p>Welcome back!</p>
+                    <h3>Login to your account</h3>
+                </div>
+
+                <form class="pt-4"  [formGroup]="loginForm"  (ngSubmit)="handleLogin(loginForm)" >
+                     
+                      
+                
+
+
+                    <mat-form-field appearance="outline" class="w-100 mt-4">
+                        <mat-label>E-mail</mat-label>
+                        <input formControlName="email" matInput type="email" placeholder="Enter your Email" >
+                      </mat-form-field>
+
+
+                      <div *ngIf="loginForm.get('email')?.errors &&  loginForm.get('email')?.touched"  class="errors" >
+                        <p *ngIf="loginForm.get('email')?.getError('maxlength')" class="m-0">*This email is incorrect</p>
+                        <p *ngIf="loginForm.get('email')?.getError('required')" class="m-0">*email is required</p>
+                       </div>
+
+
+
+                      <mat-form-field appearance="outline" class="w-100  ">
+                        <mat-label>Password</mat-label>
+                        <input formControlName="password" matInput type="password" placeholder="Enter your Password" >
+                      </mat-form-field>
+
+
+                      <div *ngIf="loginForm.get('password')?.errors &&  loginForm.get('password')?.touched"  class="errors" >
+                        <p *ngIf="loginForm.get('password')?.getError('minlength') " class="m-0">*Password minlength is 8</p>
+                        <p *ngIf="loginForm.get('password')?.getError('required')" class="m-0">*Password is required</p>
+                       </div>
+
+
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                        <label class="form-check-label" for="flexCheckDefault">
+                            Remember Me
+                        </label>
+                      </div>
+                     
+                      
+
+
+                     
+
+
+                      <button class="btn1 mt-5" type="submit">
+                        <span *ngIf="!isloading" >Login</span>
+                        <i *ngIf="isloading" class="fas fa-spinner fa-spin"></i>
+                      </button>
+                      <button routerLink="/register" class="btn2" type="button">Register</button>
+
+                </form>
+              </div>
+            </div>
+    
+        </div>
+       
+        
+    </div>
+ </section>

@@ -1,0 +1,46 @@
+
+// start main nav-bar
+nav{
+    background-color: #393280;
+    color: #fff;
+    padding: 10px 0;
+
+}
+
+.content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.phone span{
+    font-family: Inter;
+font-size: 22px;
+font-weight: 600;
+line-height: 26.63px;
+letter-spacing: 0.02em;
+text-align: left;
+}
+.icon i , .phone i{
+    transition: all 300ms;
+}
+.icon i:hover , .phone i:hover{
+    color: #ED553B;
+}
+
+@media (max-width:450px) {
+    // .container{
+    //     background-color: tomato;
+    // }
+    // .content{
+    //     flex-direction: column;
+    // }
+    // .phone{
+    //     margin-bottom: 5px;
+    // }
+    nav{
+        display: none;
+    }
+}
+
+
+// End main nav-bar

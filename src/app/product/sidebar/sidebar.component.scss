@@ -1,0 +1,93 @@
+ 
+
+.filter-container {
+    background-color: white;
+    padding-right: 35px;
+}
+
+.filter-heading h2 {
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 32px;
+    color: #393280;
+}
+.filter-heading span{
+    // display: inline-block;
+    // width: 17px;
+    // height: 2px;
+    // background-color: #393280;
+    font-size: 18px;
+    color: #393280;
+    cursor: pointer;
+}
+.filter-heading {
+    border-bottom: 2px solid #E0E0E0;
+    padding-bottom: 10px;
+}
+.price-filter {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 5px;
+    padding: 20px 0;
+}
+.price-filter label{
+    font-family: Inter;
+font-size: 16px;
+font-weight: 700;
+line-height: 32px;
+color: #393280;
+padding-right: 10px;
+
+}
+
+.price-filter input {
+    width: 77px;
+    height: 33px;
+    border: 1px solid #EAEAEA;
+    border-radius: 1px;
+}
+
+.price-filter span {
+    font-family: Inter;
+font-size: 18px;
+font-weight: 500;
+line-height: 32.4px;
+letter-spacing: 0.04em;
+color: #888888;
+}
+
+.filter-button {
+    border: none;
+    height: 44px;
+    cursor: pointer;
+    width: 100%;
+    background-color: #393280;
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 19.36px;
+    text-align: center;
+    color: #fff;
+}
+
+ 
+
+.filter-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 18px 0;
+    border-bottom: 2px solid #E0E0E0;
+    font-family: Inter;
+font-size: 16px;
+font-weight: 700;
+line-height: 32px;
+ color: #393280;
+
+}
+
+.filter-item .plus {
+    font-size: 20px;
+    cursor: pointer;
+}

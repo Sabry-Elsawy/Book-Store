@@ -1,0 +1,55 @@
+ul .space{
+    font-family: Inter;
+font-size: 18px;
+font-weight: 500;
+line-height: 21.78px;
+letter-spacing: 0.12em;
+text-align: left;
+color: #D1D1D1;
+}
+.navbar{
+    background-color: #fff !important;
+}
+.navbar .nav-item .nav-link .logo{
+    width: 87px;
+    height: 87px;
+    border-radius: 43.5px;
+    background-color: #C4C4C4;
+    display: inline-block;
+
+}
+.navbar .navbar-brand{
+    background-color: #ED553B;
+    padding: 2px !important;
+    border-radius: 10px;
+    border-color:   #ED553B;
+}
+.navbar .navbar-brand img{
+    width: 55px;
+    height: 55px;
+    padding: 10px;
+    border: 2px solid #FFFFFF;
+    border-radius: 10px;
+}
+.navbar .nav-item i{
+    color: #393280;
+    font-size: 18px;
+    cursor: pointer;
+}
+.link-home{
+    background: linear-gradient(82.93deg, #FFE6E6 0%, #F5FFFE 113.52%);
+    text-align: center;
+    padding: 25px 0;
+}
+.link-home h6{
+    font-family: Inter;
+font-size: 20px;
+font-weight: 500;
+line-height: 32px;
+color: #393280;
+
+
+}
+.link-home h6 span{
+    cursor: pointer;
+}

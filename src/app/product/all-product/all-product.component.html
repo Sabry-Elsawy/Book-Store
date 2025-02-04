@@ -1,0 +1,44 @@
+<div class="books overflow-hidden">
+ 
+   <div class="row g-4">
+     <div class="col-md-4" *ngFor="let Book of AllBooks ; let i=index"   >
+       <div class="card">
+         <div class="image text-center">
+           <img [src]="Book.image" class="w-100" alt="book">
+           
+           <button (click)="addToCart(Book._id , 1)">ADD TO CART</button>
+         </div>
+   
+         <h6>{{Book.name}}</h6>
+         <span>{{Book.auther}} </span>
+         <p>$ {{Book.price}} </p>
+       </div>
+     </div>
+   </div>
+ 
+ 
+ </div>
+
+ 
+
+ <nav aria-label="Page navigation example">
+  <ul class="pagination d-flex justify-content-center pt-5">
+    <li class="page-item" [class.disabled]="currentPage === 1">
+      <a class="page-link arrow"  aria-label="Previous" (click)="goToPage(currentPage - 1)">
+        <span aria-hidden="true"><i class="fa-solid fa-arrow-left"></i></span>
+      </a>
+    </li>
+    <li *ngFor="let page of [].constructor(totalPages); let i = index" class="page-item" [class.active]="currentPage === i + 1">
+      <a class="page-link"  (click)="goToPage(i + 1)">{{ i + 1 }}</a>
+    </li>
+    <li class="page-item" [class.disabled]="currentPage === totalPages">
+      <a class="page-link arrow"  aria-label="Next" (click)="goToPage(currentPage + 1)">
+        <span aria-hidden="true"><i class="fa-solid fa-arrow-right"></i></span>
+      </a>
+    </li>
+  </ul>
+</nav>
+
+
+
+

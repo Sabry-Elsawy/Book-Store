@@ -1,0 +1,122 @@
+ 
+
+section{
+    height: 120vh;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image-section img{
+    width: 100%;
+    height: 100vh;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+}
+
+.container{
+    width: 70%;
+    height: 100vh;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    background-color: #fff;
+    padding: 0px !important;
+    border-radius: 15px;
+   
+    
+}
+.form-section{
+    padding: 60px ;
+}
+.form-section .form-section-heading .logo{
+    display: flex;
+    justify-content: center;
+}
+.form-section .form-section-heading p{
+    font-family: Manrope;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 32.78px;
+    text-align: left;
+    color: #09093799;
+    margin-bottom: 0px;
+    padding-top: 40px;
+
+}
+.form-section .form-section-heading h3{
+//styleName: Text;
+font-family: Manrope;
+font-size: 32px;
+font-weight: 700;
+line-height: 43.71px;
+text-align: left;
+color: #090937;
+
+}
+
+.form-section .btn1{
+    width: 100%;
+    background-color: #EF6B4A ;
+    border-radius: 4px;
+    padding: 10px 20px;
+    font-family: Manrope;
+font-size: 24px;
+font-weight: 600;
+line-height: 32.78px;
+color: #fff;
+text-align: center;
+    border: none;
+}
+
+.form-section .btn2{
+    border-radius: 4px;
+    border: 1px solid #6251DD;
+    color: #6251DD ;
+    padding: 10px 20px;
+    font-family: Manrope;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 32.78px;
+    width: 100%;
+    margin-top: 20px;
+    background-color: transparent;
+    transition: all 300ms;
+}
+.form-section .btn2:hover{
+    background-color: #6251DD;
+    color: #fff;
+}
+.form-check label{
+    font-family: Manrope;
+font-size: 16px;
+font-weight: 700;
+line-height: 21.86px;
+text-align: left;
+color: #6251DD;
+}
+.form-check input{
+    border-color: #6251DD;
+   
+}
+ 
+.form-check-input:checked {
+    background-color: #6251DD;
+}
+.errors p{
+    color: red;
+    margin: 0  0 10px 0!important;
+}
+ 
+@media (max-width:992px) {
+    .col1{
+        display: none;
+    }
+    .container{
+        width: 95%;
+        height: auto;
+    }
+    .form-section{
+        padding: 50px 30px;
+        margin-top: 50px;
+    }
+}

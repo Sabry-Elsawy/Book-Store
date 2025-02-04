@@ -1,0 +1,229 @@
+
+ <!-- start main nav-bar -->
+<nav>
+    <div class="container">
+        <div class="content ">
+            <div class="phone">
+                <i class="fa-solid fa-phone "></i>
+                <span class="mx-2">+91 8374902234</span>
+            </div>
+            <div class="icon">
+                <i class="fa-brands fa-facebook-f me-4"></i>
+                <i class="fa-brands fa-instagram mx-4"></i>
+                <i class="fa-brands fa-linkedin-in mx-4"></i>
+                <i class="fa-brands fa-twitter ms-4"></i>
+                
+            </div>
+        </div>
+    </div>
+ </nav>
+
+ <!-- End main nav-bar -->
+
+
+
+ <!-- Start nav-bar -->
+ <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container">
+      <a class="navbar-brand" >
+        <img src="assets/images/Vector.svg" alt="logo">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link"  ><span class="logo"></span></a>
+          </li>
+        </ul>
+        <ul class="navbar-nav ms-0 mb-2 mb-lg-0">
+            <li class="nav-item">
+                <i class="fa-regular fa-user me-3"></i>
+                <span class="space">|</span>
+                <i routerLink="/Cart" class="fa-solid fa-bag-shopping mx-3"></i>
+                <span class="space">|</span>
+                <i class="fa-regular fa-heart ms-3"></i>
+            </li>
+          </ul>
+       
+      </div>
+    </div>
+  </nav>
+
+
+
+
+
+  <div class="link-home ">
+    <h6><span routerLink="/home/landing">HOME  </span>/  Cart</h6>
+  </div>
+
+  <!-- End nav-bar -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- start cart -->
+
+<div class="cart">
+    <div class="container">
+        <div class="row py-5">
+            <div class="col-md-8">
+                    <div class="product-details">
+                        <h6>Products Detailes</h6>
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Num</th>
+                                    <th>Book</th>
+                                    <th>Amount</th>
+                                    <th>Cost</th>
+                                    <th>Subtotal</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr *ngFor="let item of productCart ; let i=index">
+                                    <td>{{i+1}}</td>
+                                    <td>
+                                        <img src="../../assets/images/book3.png"  alt="My Book Cover">
+                                        <span>My Book Cover</span>
+                                    </td>
+                                    <td class="num">
+                                        <button   class="btn1">-</button>
+                                         <span>{{item.quantity}}</span>
+                                        <button   class="btn2">+</button>
+                                    </td>
+                                    <td>36 AED</td>
+                                    <td>36 AED  <i (click)="removeItem(item._id)" class="fa-solid fa-xmark ms-4"></i></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                </div>
+            </div>
+
+
+            <div class="col-md-4 content-cost d-flex justify-content-center">
+                <div class="cost">
+                    <div class="cart-total-cost">
+                        <h6>Cart Total Cost</h6>
+                        <p class="total"><span>Total</span><span>36 AED</span></p>
+                        <p class="tax"><span>Tax</span><span>1.6 AED</span></p>
+                        <p class="total-cost"><span>Total Cost</span><span>37.6 AED</span></p>
+                    </div>
+                    <button class="proceed-btn">Proceed <i class="fa-solid fa-cart-plus mx-2"></i></button>
+                
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<!-- End cart -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <!-- Start footer -->
+  <div class="footer">
+    <div class="container">
+        <div class="row justify-content-between gy-5">
+            <div class="col-md-4 ">
+                <div>
+                    <img src="assets/images/sample logo 1.png" alt="logo">
+                    <p>Nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+                    <div class="icon d-flex justify-content-between align-items-center">
+                        <i class="fa-brands fa-facebook"></i>
+                        <i class="fa-brands fa-linkedin"></i>
+                        <i class="fa-brands fa-twitter"></i>
+                        <i class="fa-brands fa-youtube"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                 
+                <ul>
+                    <li class="heading">Company</li>
+                    <li>HOME</li>
+                    <li>ABOUT US</li>
+                    <li>BOOKS </li>
+                    <li>NEW RELEASE</li>
+                    <li>CONTACT US</li>
+                    <li>BLOG</li>
+                </ul>
+            </div>
+            <div class="col-md-3 ">
+                
+                <ul>
+                    <li class="heading">Importent Links</li>
+                    <li>Privacy Policy</li>
+                    <li>FAQs </li>
+                    <li>Terms of Service</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="copy-right d-flex align-items-center justify-content-between pt-5">
+            <p>© 2022 Arihant. All Rights Reserved.
+               </p>
+               <p>  Privacy | Terms of Service</p>
+        </div>
+    </div>
+</div>
+<!-- End footer -->

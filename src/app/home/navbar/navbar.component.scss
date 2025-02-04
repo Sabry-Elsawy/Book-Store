@@ -1,0 +1,35 @@
+.logo{
+    display: inline-block;
+    width: 86px ;
+    height: 86px ;
+    background-color: #C4C4C4;
+    border-radius: 50%;
+}
+nav{
+    background-color: #fff;
+}
+
+ul li a{
+    font-family: Inter;
+font-size: 18px;
+font-weight: 800;
+line-height: 21.78px;
+letter-spacing: 0.12em;
+text-align: left;
+color: #111111;
+}
+ul .space{
+    font-family: Inter;
+font-size: 18px;
+font-weight: 500;
+line-height: 21.78px;
+letter-spacing: 0.12em;
+text-align: left;
+color: #D1D1D1;
+}
+.active{
+    color: #ED553B !important;
+}
+ul li i{
+    color:#393280;
+}

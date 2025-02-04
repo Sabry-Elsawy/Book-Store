@@ -1,0 +1,256 @@
+ 
+
+   <div class="Home-Slider">
+    <div class="container overflow-hidden">
+      <owl-carousel-o [options]="customOptions">
+        <ng-container *ngFor="let Book of AllBooks">
+          <ng-template carouselSlide>
+            <div class="book-slide">
+              <div class="row g-0 align-items-center gy-3">
+                <div class="col-md-6 ">
+                  <div class="caption-slider">
+                    <h3>{{Book.name}}</h3>
+                    <p>{{Book.description}}</p>
+                    <button  > <span>Read more</span> <i class="fa-solid fa-arrow-right mx-2"></i></button>
+                  </div>
+                </div>
+                <div class="col-md-6 content-image">
+                 <div class=" image">
+                    <img src="assets/images/Mask Group.png" alt="Book" class=" w-100">
+                 </div>
+                </div>
+              </div>
+            </div>
+          </ng-template>
+     
+        </ng-container>
+      </owl-carousel-o>
+    </div>
+  </div>
+  
+
+
+
+
+
+
+
+
+    <div class="container">
+        <div class="category">
+            <div class="category-heading">
+                <h6>Categories</h6>
+                <h2>Explore our Top Categories</h2>
+            </div>
+
+            <div class="row pt-5 g-4">
+                <div *ngFor="let category of displayedCategories ; let i = index"    class="col-md-4">
+                    <div class="card">
+                        <img [src]="AllImagesCategories[i]" alt="Books">
+                        <h5>{{category.title}}</h5>
+                    </div>
+                </div>
+            
+            </div>
+
+            <div class="text-center mt-4">
+                <button class="btn btn-primary" (click)="toggleShowAll()">
+                  {{ showAll ? 'View Less' : 'View more' }}
+                  <i class="fa-solid fa-arrow-right mx-2"></i>
+                </button>
+              </div>
+
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+    <div class="books overflow-hidden">
+      <div class="books-heading text-center">
+        <p>Some quality items</p>
+        <h1>New Release Books</h1>
+      </div>
+      <div class="row g-4">
+        <div class="col-md-3" *ngFor="let Book of AllBooks ; let i = index">
+          <div class="card">
+            <div class="image text-center">
+              <img [src]="AllimagesBooks[i]" class="w-100" alt="book">
+              <button (click)="addToCart(Book._id , 1)">ADD TO CART</button>
+            </div>
+            <h6>{{Book.name}}</h6>
+            <span>{{Book.auther}}</span>
+            <p>$ {{Book.price}}</p>
+          </div>
+        </div>
+      </div>
+      <div class="space"></div>
+     <div class="btn1">
+      <button routerLink="/Product">View all products <i class="fa-solid fa-arrow-right"></i></button>
+     </div>
+    </div>
+
+
+
+
+
+
+    <div class="details-books">
+    
+        <div id="carouselExampleIndicators" class="carousel slide">
+          <div class="carousel-indicators">
+         <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button> 
+         <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button> 
+         <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button> 
+         <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button> 
+          </div>
+        <div class="container">
+          <div class="carousel-inner "  >
+            <div [class.active]="i === 0" class="carousel-item" *ngFor="let book of AllBooks ; let i=index">
+                <div class="row gy-3 gx-0 align-items-center">
+                  <div class="col-md-6 ps-5 ">
+                   <div  >
+                    <img [src]="AllimagesBooks[i]" alt="book" >
+                   </div>
+                  </div>
+                  <div class="col-md-6  px-5">
+                    <div class="content">
+                      <h1>Featured book</h1>
+                      <p class="head">By Timbur Hood</p>
+                      <h6>{{book.name}}</h6>
+                      <p>{{book.description}}</p>
+                      <span class="d-block">$ {{book.price}}</span>
+                      <button>View more <i class="fa-solid fa-arrow-right"></i></button>
+                    </div>
+                  </div>
+                </div>
+            </div>
+            
+           
+           
+          </div>
+        </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon " aria-hidden="true"><i class="fa-solid fa-arrow-left"></i></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+            <span class="carousel-control-next-icon " aria-hidden="true"><i class="fa-solid fa-arrow-right"></i></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+ 
+
+
+
+
+
+
+
+    <div class="container">
+      <div class="offer">
+        <div class="row g-4">
+          <div class="col-md-6">
+            <div>
+              <h2>
+                All books are 50% off now! <br> Don't miss such a deal!
+              </h2>
+              <p class="lorem">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eu feugiat amet, libero ipsum enim pharetra hac.</p>
+              <div class="time">
+                <p><span>768</span>Days</p>
+                <p><span>01</span>Hour</p>
+                <p><span>27</span>Mint</p>
+                <p><span>55</span>Sec</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <img src="../../../assets/images/Unsplash.png" class="w-100" alt="book">
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+
+
+
+    <div class="subscribe">
+      <div class="container text-center">
+            <div class="heading">
+              <h1>Subscribe to Our Newsletter</h1>
+              <p>Sed eu feugiat amet, libero ipsum enim pharetra hac dolor sit amet, <br> consectetur. Elit adipiscing enim pharetra hac.</p>
+            </div>
+             <div class="d-flex justify-content-center">
+              <div class="contact position-relative">
+                <i class="fa-solid fa-envelope"></i>
+                <input type="email" placeholder="Enter your email">
+                <button>SUBSCRIBE</button>
+              </div>
+             </div>
+      </div>
+    </div>
+
+
+
+
+
+
+    <div class="articles overflow-hidden">
+      <div class="books-heading text-center">
+        <p>Read our articles</p>
+        <h1>Latest Articles</h1>
+      </div>
+      <div class="row g-3 py-4">
+        <div class="col-md-4">
+          <div class="card">
+            <img src="assets/images/Rectangle 45.png" class="w-100" alt="image-articles">
+            <p>2 aug, 2021</p>
+            <h6>Reading books always makes the moments happy</h6>
+            <div class="space"></div>
+            <div class="icon ">
+              <i class="fa-brands fa-facebook-f"></i>
+              <i class="fa-brands fa-twitter"></i>
+              <i class="fa-brands fa-instagram"></i>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card">
+            <img src="assets/images/Rectangle 38.png" class="w-100" alt="image-articles">
+            <p>2 aug, 2021</p>
+            <h6>Reading books always makes the moments happy</h6>
+            <div class="space"></div>
+            <div class="icon ">
+              <i class="fa-brands fa-facebook-f"></i>
+              <i class="fa-brands fa-twitter"></i>
+              <i class="fa-brands fa-instagram"></i>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card">
+            <img src="assets/images/Rectangle 44.png" class="w-100" alt="image-articles">
+            <p>2 aug, 2021</p>
+            <h6>Reading books always makes the moments happy</h6>
+            <div class="space"></div>
+            <div class="icon ">
+              <i class="fa-brands fa-facebook-f"></i>
+              <i class="fa-brands fa-twitter"></i>
+              <i class="fa-brands fa-instagram"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="text-center mt-3">
+        <button>read all articles <i class="fa-solid fa-arrow-right"></i></button>
+      </div>
+    </div>
