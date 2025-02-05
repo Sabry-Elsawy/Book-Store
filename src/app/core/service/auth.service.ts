@@ -8,7 +8,7 @@ import { FormGroup } from '@angular/forms';
   providedIn: 'root'
 })
 export class AuthService implements OnInit {
-basUrl:string='https://upskilling-egypt.com:3007';
+ 
 Data= new BehaviorSubject(null);
   constructor(private _HttpClient:HttpClient) { }
   ngOnInit(): void {
@@ -17,22 +17,18 @@ Data= new BehaviorSubject(null);
     }
   }
 
-header:any={language:'ar'}
+// header:any={language:'en'}
   submitRegistration(formData:any):Observable<any>{
-  return  this._HttpClient.post(`${this.basUrl}/api/auth/register` , formData,
-    {headers:this.header}
-  )
+  return  this._HttpClient.post(`api/auth/register` , formData )
   }
 
 
   submitlogin(formData:any):Observable<any>{
-    return  this._HttpClient.post(`${this.basUrl}/api/auth/login` , formData,
-      {headers:this.header}
-    )
+    return  this._HttpClient.post(`api/auth/login` , formData )
     }
 
     userData(){
-      let data:any = JSON.stringify(  localStorage.getItem('userData'))
+      let data:any = JSON.parse(  localStorage.getItem('userData') || '{}' )
       this.Data.next(data)
     }
 

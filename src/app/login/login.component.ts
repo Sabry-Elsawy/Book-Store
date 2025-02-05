@@ -11,8 +11,9 @@ import { Router } from '@angular/router';
 export class LoginComponent {
  constructor(private _AuthService:AuthService , private _Router:Router){}
  isloading:boolean=false;
+ errorMassege:string='';
   loginForm:FormGroup =new FormGroup({
-    password:new FormControl(null , [Validators.required  , Validators.minLength(8) ]),
+    password:new FormControl(null , [Validators.required  , Validators.minLength(7) ]),
     email:new FormControl(null , [Validators.required , Validators.email]),
   })
 
@@ -24,6 +25,7 @@ export class LoginComponent {
       next:(response)=>{
         console.log(response);
         if (response.status === 'SUCCESS') {
+          console.log(response)
           localStorage.setItem('userToken' , response.data.accessToken)
           localStorage.setItem('userData' , JSON.stringify( response.data.profile))
           this._AuthService.userData()
@@ -33,6 +35,7 @@ export class LoginComponent {
       },
       error:(err)=>{
         console.log(err);
+        this.errorMassege=err.error.message;
         this.isloading=false;
       }
     })

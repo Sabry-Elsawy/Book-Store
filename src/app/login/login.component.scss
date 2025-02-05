@@ -1,33 +1,40 @@
  
-
-section{
-    height: 120vh;
-    background-color: #f4f4f4;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.image-section img{
-    width: 100%;
-    height: 100vh;
-    border-top-left-radius: 15px;
-    border-bottom-left-radius: 15px;
-}
-
-.container{
-    width: 70%;
-    height: 100vh;
-    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-    background-color: #fff;
-    padding: 0px !important;
-    border-radius: 15px;
+ 
+ 
+.image-section {
    
-    
+    background-image: url('../../assets/images/Picture.png');
+    width: 100%;
+    min-height: 100%; 
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size:  cover;
 }
+// .image-section {
+//     width: 100%;
+//     height: 100%; 
+//     overflow: hidden;
+// }
+// .image-section img{
+//     width: 100%;
+//     height: 100%;
+   
+// }
+.col-lg-6 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+//    flex-direction: column;
+}
+
+
+// =====================================
 .form-section{
-    padding: 60px ;
+     padding: 60px ;
+     width: 90%;
 }
+ 
 .form-section .form-section-heading .logo{
     display: flex;
     justify-content: center;
@@ -104,8 +111,13 @@ color: #6251DD;
 }
 .errors p{
     color: red;
-    margin: 0  0 10px 0!important;
+    margin: -10px  0 10px 0!important;
 }
+ .errors .main-error{
+    margin-bottom: -30px !important;
+ 
+}
+ 
  
 @media (max-width:992px) {
     .col1{
@@ -118,5 +130,7 @@ color: #6251DD;
     .form-section{
         padding: 50px 30px;
         margin-top: 50px;
+        width: 100%;
     }
+ 
 }

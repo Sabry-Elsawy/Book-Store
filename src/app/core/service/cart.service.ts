@@ -13,7 +13,7 @@ export class CartService {
   constructor(private _HttpClient:HttpClient) { }
 
   addToCart(book:string , quantity:number):Observable<any>{
-    return this._HttpClient.post('https://upskilling-egypt.com:3007/api/basket/item' ,
+    return this._HttpClient.post('api/basket/item' ,
       {book:book ,
         quantity:quantity
       }

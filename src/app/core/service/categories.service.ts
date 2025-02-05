@@ -10,6 +10,6 @@ export class CategoriesService {
   constructor(private _HttpClient:HttpClient) { }
 
   GetAllCatgory():Observable<any>{
-    return this._HttpClient.get('https://upskilling-egypt.com:3007/api/category');
+    return this._HttpClient.get('api/category');
   }
 }

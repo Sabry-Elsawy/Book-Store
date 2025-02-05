@@ -12,6 +12,8 @@ import { Router } from '@angular/router';
 export class RegisterComponent {
   constructor(private _AuthService:AuthService , private _Router:Router){}
 isLoading:boolean=false;
+errorMessage:string='';
+
   registerForm:FormGroup =new FormGroup({
     first_name:new FormControl(null , [Validators.required , Validators.minLength(3) , Validators.maxLength(10)]),
     last_name:new FormControl(null , [Validators.required , Validators.minLength(3) , Validators.maxLength(10)]),
@@ -35,6 +37,7 @@ isLoading:boolean=false;
         error:(err)=>{
           console.log(err);
           this.isLoading=false;
+          this.errorMessage=err.error.message;
         }
       })
     

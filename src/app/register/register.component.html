@@ -1,21 +1,26 @@
  <section>
-    <div class="container">
+    <div class="container-fluid">
         <div class="row  ">
             <div class="col-lg-6 g-0 col1" >
                 <div class="image-section ">
-                    <img src="../../assets/images/Picture.png" alt="Background Image">
+                    <!-- <img src="../../assets/images/Picture.png" alt="Background Image"> -->
                 </div>
             </div>
     
     
             <div class="col-lg-6 g-0">
-              <div class="form-section">
+              <div class="form-section ">
                 <div class="form-section-heading">
                      <div class="logo">
                         <img src="../../assets/images/Logo.png" alt="logo">
                      </div>
                     <p>Create new acccount</p>
                     <h3>Register</h3>
+                </div>
+
+                
+                <div *ngIf="errorMessage" class="errors">
+                  <p class="main-error">{{ errorMessage}}</p>
                 </div>
 
                 <form class="pt-4"  [formGroup]="registerForm" (ngSubmit)="handleRegisterForm(registerForm)" >
