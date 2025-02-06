@@ -1,13 +1,28 @@
-.logo{
-    display: inline-block;
-    width: 86px ;
-    height: 86px ;
-    background-color: #C4C4C4;
-    border-radius: 50%;
-}
-nav{
+.navbar {
+    position: fixed;
+    top: 47px;
+    left: 0;
+    right: 0;
+    z-index: 999;
     background-color: #fff;
+    box-shadow: rgba(0, 0, 0, 0) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+    transition: top 0.3s ease;  
+  }
+  
+  .navbar.scrolled {
+    top: 0;  
+    background-color: #ffffff8a;
+  }
+.links{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
 }
+.small-screen{
+    display: none;
+}
+ 
 
 ul li a{
     font-family: Inter;
@@ -17,6 +32,7 @@ line-height: 21.78px;
 letter-spacing: 0.12em;
 text-align: left;
 color: #111111;
+cursor: pointer;
 }
 ul .space{
     font-family: Inter;
@@ -32,4 +48,79 @@ color: #D1D1D1;
 }
 ul li i{
     color:#393280;
+    margin: 0 10px;
+    font-size: 18px;
+    cursor: pointer;
+}
+.navbar-brand img{
+    background-color: var(--main-color);
+    width: 50px ;
+   height: 50px ;
+   border-radius: 50%;
+}
+.navbar-nav{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+  .nav-item{
+    margin: 0 10px;
+  }
+ .icon li{
+    display: flex;
+    align-items: center;
+}
+.navbar-btn{
+    border: none;
+    background-color: transparent;
+    display: none;
+}
+.navbar-btn span i{
+    font-size: 25px;
+}
+
+
+@media (max-width:1240px) {
+    .Big-screen{
+        display: none;
+    }
+ .small-screen{
+    display: block;
+ }
+ .navbar-btn{
+    display: block;
+ }
+ .links{
+     background-color: #fff;
+     box-shadow: rgba(0, 0, 0, 0.101) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+     padding: 50px 15px;
+     width: 250px;
+     position: fixed;
+     top: 0;
+     right: -250px;
+     z-index: 10000;
+     height: 100vh;
+     flex-direction: column;
+     align-items: flex-start;
+     justify-content: start;
+     transition: right 0.3s ease;
+ }
+  .show{
+    right: 0;
+ }
+ .icon{
+    padding-left: 0 !important;
+    padding-top: 10px;
+ }
+ .icon i{
+    margin: 0 10px 0 0 !important;
+ }
+ 
+ .navbar-nav{
+    flex-direction: column;
+    align-items: flex-start;
+ }
+ .space{
+    display: none;
+ }
 }

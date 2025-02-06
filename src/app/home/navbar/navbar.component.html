@@ -1,86 +1,71 @@
-<nav >
-    <div class="container ">
-        <nav class="navbar navbar-expand-lg">
-            <div class="container-fluid">
-              <a class="navbar-brand " >
-                <span class="logo"></span>
-              </a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav mx-auto mb-2 mb-lg-0 align-items-center">
-                
-                  <li class="nav-item">
-                    <a class="nav-link" routerLink="/home/landing" routerLinkActive="active">HOME</a>
-                  </li>
+ 
+<nav class="navbar py-2  " [ngClass]="{'scrolled': isScrolled}">
+  <div class="container">
+    <a class="navbar-brand small-screen"  > 
+      <img src="../../../assets/images/sample logo 1.png" alt="logo">
+    </a>
+    <div class="links" [ngClass]="{'show': isOpen}">
+      <a class="navbar-brand Big-screen"  > 
+        <img src="../../../assets/images/sample logo 1.png" alt="logo">
+      </a>
+      <ul class="navbar-nav  ">
+     
+        <li (click)="toggleNavbar()" class="nav-item">
+          <a   class="nav-link" routerLink="/home/landing" routerLinkActive="active">HOME</a>
+        </li>
+        <li>
+          <span class="space">|</span>
+        </li>
+        <li (click)="toggleNavbar()" class="nav-item">
+          <a  class="nav-link" routerLinkActive="active" >ABOUT US</a>
+        </li>
+        
+        <li>
+          <span class="space">|</span>
+        </li>
+        <li (click)="toggleNavbar()" class="nav-item">
+          <a class="nav-link" routerLinkActive="active">BOOKS</a>
+        </li>       
+        <li>
+          <span class="space">|</span>
+        </li>
+        <li (click)="toggleNavbar()" class="nav-item">
+          <a class="nav-link" routerLinkActive="active">NEW RELEASE </a>
+        </li>
+        <li>
+          <span class="space">|</span>
+        </li>
+        <li (click)="toggleNavbar()" class="nav-item">
+          <a class="nav-link" routerLinkActive="active">CONTACT US</a>
+        </li>
+        <li>
+          <span class="space">|</span>
+        </li>
+        <li (click)="toggleNavbar()" class="nav-item">
+          <a class="nav-link" routerLinkActive="active">BLOG</a>
+        </li>
+      
+      </ul>
 
-                  <li>
-                    <span class="space">|</span>
-                  </li>
-
-                  
-
-                  <li class="nav-item">
-                    <a class="nav-link" routerLinkActive="active" >ABOUT US</a>
-                  </li>
-
-                  
-                  <li>
-                    <span class="space">|</span>
-                  </li>
-
-
-                  <li class="nav-item">
-                    <a class="nav-link" routerLinkActive="active">BOOKS</a>
-                  </li>
-
-                  
-                  <li>
-                    <span class="space">|</span>
-                  </li>
-
-
-                  <li class="nav-item">
-                    <a class="nav-link" routerLinkActive="active">NEW RELEASE </a>
-                  </li>
-
-                  
-                  <li>
-                    <span class="space">|</span>
-                  </li>
-
-
-                  <li class="nav-item">
-                    <a class="nav-link" routerLinkActive="active">CONTACT US</a>
-                  </li>
-
-                  
-                  <li>
-                    <span class="space">|</span>
-                  </li>
-
-
-                  <li class="nav-item">
-                    <a class="nav-link" routerLinkActive="active">BLOG</a>
-                  </li>
-             
-                 
-                </ul>
-
-
-                <ul class="icon ms-0 navbar-nav  mb-2 mb-lg-0 align-items-center">
-                    <li class="nav-item">
-                        <i class="fa-regular fa-user me-3"></i>
-                        <span class="space">|</span>
-                        <i routerLink="/Cart" class="fa-solid fa-bag-shopping mx-3"></i>
-                        <span class="space">|</span>
-                        <i class="fa-regular fa-heart ms-3"></i>
-                    </li>
-                </ul>
-             
-              </div>
-            </div>
-          </nav>
+      <ul class="icon mb-0">
+        <li (click)="toggleNavbar()" class="nav-item">
+            <i class="fa-regular fa-user "></i>
+            <span class="space">|</span>
+            <i routerLink="/Cart" class="fa-solid fa-bag-shopping mx-3"></i>
+            <span class="space">|</span>
+            <i class="fa-regular fa-heart "></i>
+            <span class="space">|</span>
+            <i class="fa-solid fa-arrow-right-from-bracket"></i>
+        </li>
+    </ul>
+ 
+ 
     </div>
+    <button (click)="toggleNavbar()" class="navbar-btn "  type="button" title="navbar-collapse" >
+      <span><i class="fa-solid fa-bars"></i></span>
+    </button>
+
+  </div>
 </nav>
+
+
