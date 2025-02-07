@@ -10,7 +10,7 @@
             <div class="row pt-5 g-4">
                 <div *ngFor="let category of displayedCategories ; let i = index"    class="col-md-4">
                     <div class="card">
-                        <img [src]="AllImagesCategories[i]" alt="Books">
+                        <img [src]="AllImagesCategories?.[i % AllImagesCategories.length]" alt="Books">
                         <h5>{{category.title}}</h5>
                     </div>
                 </div>
