@@ -1,6 +1,6 @@
 import { Component, OnInit  } from '@angular/core';
 import { BooksService } from 'src/app/core/service/books.service';
-import { OwlOptions } from 'ngx-owl-carousel-o';
+//import { OwlOptions } from 'ngx-owl-carousel-o';
 import { Book, category } from 'src/app/core/service/interface/user';
 import { CategoriesService } from 'src/app/core/service/categories.service';
 import { CartService } from 'src/app/core/service/cart.service';
@@ -40,24 +40,24 @@ export class ContentLandingComponent implements OnInit {
     });
   }
 
-  customOptions: OwlOptions = {
-    loop: true,
-    mouseDrag: true,
-    touchDrag: false,
-    pullDrag: false,
-    dots: false,
-    navSpeed: 700,
-    navText: ['<span class="nav-btns nav-prev"> </span>',
-      '<span class="nav-btns nav-next"> </span>'],
-    responsive: {
-      0: {
-        items: 1,
-        autoHeight: true,
-      },
+  // customOptions: OwlOptions = {
+  //   loop: true,
+  //   mouseDrag: true,
+  //   touchDrag: false,
+  //   pullDrag: false,
+  //   dots: false,
+  //   navSpeed: 700,
+  //   navText: ['<span class="nav-btns nav-prev"> </span>',
+  //     '<span class="nav-btns nav-next"> </span>'],
+  //   responsive: {
+  //     0: {
+  //       items: 1,
+  //       autoHeight: true,
+  //     },
    
-    },
-    nav: true
-  }
+  //   },
+  //   nav: true
+  // }
 
 
 

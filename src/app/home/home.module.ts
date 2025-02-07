@@ -10,6 +10,7 @@ import { FooterComponent } from './footer/footer.component';
 import { ContentLandingComponent } from './content-landing/content-landing.component';
 import { CarouselModule } from 'ngx-owl-carousel-o';
 import { RouterModule } from '@angular/router';
+import { HeroComponent } from './hero/hero.component';
  
  
     
@@ -21,6 +22,7 @@ import { RouterModule } from '@angular/router';
     MainNavbarComponent,
     FooterComponent,
     ContentLandingComponent,
+    HeroComponent,
   
   ],
   imports: [

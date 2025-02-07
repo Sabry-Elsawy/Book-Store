@@ -1,0 +1,51 @@
+<div class="Home-slider ">
+     
+    <div id="carouselExampleIndicators" class="  carousel slide ">
+     <div class="carousel-indicators">
+       <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+       <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+       <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+       <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+     </div>
+ <div class="container  mt-0 h-100 px-5">
+    <div class="carousel-inner h-100">
+        <div class="carousel-item h-100   " [class.active]="i===0" *ngFor="let Book of AllBooks ; let i = index">
+          <div class="row  align-items-center  h-100">
+           <div class="col-lg-6">
+             <div class="caption">
+                 <h3>{{Book.name}}</h3>
+                 <p>{{Book.description}} Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi est odit libero eum alias officia ut mollitia, nostrum dignissimos tenetur eius fugiat nisi necessitatibus ratione! Reiciendis corrupti quisquam eum perspiciatis.</p>
+                    <button  > <span>Read more</span> <i class="fa-solid fa-arrow-right mx-2"></i></button>
+             </div>
+           </div>
+          <div class="col-lg-6 p-0  h-100  image ">
+            <img [src]="AllimagesBooks[i]" class="w-100  " alt="">
+          </div>
+             
+          </div>
+        </div>
+ 
+ 
+    
+      </div  >
+ </div>
+     <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+       <span class="carousel-control-prev-icon" aria-hidden="true"><i class="fa-solid fa-arrow-left"></i></span>
+       <span class="visually-hidden">Previous</span>
+     </button>
+     <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+       <span class="carousel-control-next-icon" aria-hidden="true"><i class="fa-solid fa-arrow-right"></i></span>
+       <span class="visually-hidden">Next</span>
+     </button>
+   </div>
+ 
+    </div>
+ 
+ 
+
+
+
+
+
+
+  

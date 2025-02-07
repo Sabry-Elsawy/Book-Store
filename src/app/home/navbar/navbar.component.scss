@@ -124,3 +124,9 @@ ul li i{
     display: none;
  }
 }
+@media (max-width: 450px) {
+    .navbar{
+        top: 0;
+    }
+    
+}
